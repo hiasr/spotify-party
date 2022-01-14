@@ -16,8 +16,7 @@ function CreateParty() {
   const router = useRouter();
 
   const handleLogin = () => {
-    signIn("spotify", { callbackurl: "http://localhost:3000"});
-    router.push('/')
+    signIn("spotify", { callbackUrl: "http://localhost:3000"});
   }
 
   return (

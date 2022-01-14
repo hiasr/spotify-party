@@ -1,4 +1,11 @@
 export default function Player({ currentTrack }) {
+	if (!currentTrack) {
+		return (
+		<div className="flex flex-col items-center justify-center space-y-4 h-screen">
+			<span className="text-slate-500 text-4xl">Nothing currently playing...</span>
+		</div>
+		)
+	}
 	return (
 		<div className="flex flex-col items-center justify-center space-y-4 h-screen">
 			<img 
