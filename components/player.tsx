@@ -1,5 +1,8 @@
+import React from 'react'
+
 /* eslint-disable @next/next/no-img-element */
 export default function Player({ currentTrack }) {
+
 	if (!currentTrack) {
 		return (
 		<div className="flex flex-col items-center justify-center space-y-4 h-screen">

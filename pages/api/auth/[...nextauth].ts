@@ -49,7 +49,7 @@ export default NextAuth({
 			if (account && user) {
 				token.accessToken = account.access_token
 				token.expiresAt = account.expires_at*1000
-				token.refreshToken = account.expires_at*1000
+				token.refreshToken = account.refresh_token
 				token.user = user
 
 				const { db } = await connectToDatabase();
